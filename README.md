@@ -44,3 +44,18 @@ Use
 - That's it !
 
 You may want to play with options : size of generated gif, interval, text with custom color, ... All this is also possible in the advanced mode.
+
+Screenshots
+===
+![Main app](https://github.com/fabiolab/gify/blob/master/screenshots/screenshot01.png)
+*Main app*
+![Uploading a dropped image](https://github.com/fabiolab/gify/blob/master/screenshots/screenshot04.png)
+*Uploading a dropped image*
+![Image uploaded, button ready](https://github.com/fabiolab/gify/blob/master/screenshots/screenshot06.png)
+*Image uploaded, button ready*
+![Ready for animate](https://github.com/fabiolab/gify/blob/master/screenshots/screenshot07.png)
+*Ready for animate*
+![Options](https://github.com/fabiolab/gify/blob/master/screenshots/screenshot08.png)
+*Options*
+![Done !](https://github.com/fabiolab/gify/blob/master/screenshots/screenshot09.png)
+*Done !*
