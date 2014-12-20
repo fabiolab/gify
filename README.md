@@ -1,0 +1,4 @@
+gify
+====
+
+Animated gif generator
