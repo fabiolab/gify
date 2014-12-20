@@ -1,0 +1,125 @@
+<accordion>
+  <accordion-group is-open="status.open">
+    <accordion-heading>
+      Options <i class="glyphicon" ng-class="{'glyphicon-chevron-up': status.open, 'glyphicon-chevron-down': !status.open}"></i>
+    </accordion-heading>
+
+    <form class="form-horizontal" action="">
+      <div class="container">
+      <div class="row">
+
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label for="gifWidth" class="col-md-4">GIF Width</label>
+          <div class="col-md-8">
+            <input ng-model="data.options.gifWidth" class="form-control" size="5" type="number"></input>
+          </div>
+        </div>
+
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="gifHeight">GIF Height</label>
+          <div class="col-md-8">
+            <input ng-model="data.options.gifHeight" id="gifHeight" class="form-control" size="5" type="number"></input>
+          </div>
+        </div>
+      
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="interval">Interval</label>
+          <div class="col-md-8">
+            <input ng-model="data.options.interval" id="interval" class="form-control" size="5" type="number"></input>
+          </div>
+        </div>
+      </div>    
+
+      <div class="row">
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="numFrames">Nb Frames</label>
+          <div class="col-md-8">
+            <input ng-model="data.options.numFrames" id="numFrames" class="form-control" size="5" type="number"></input>
+          </div>
+        </div>
+      
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="gifText">GIF Text</label>
+          <div class="col-md-8">
+            <input ng-model="data.options.text" id="gifText" class="form-control" size="30" placeholder="Add text here..."></input>
+          </div>
+        </div>
+      
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="fontWeight">Font Weight</label>
+          <div class="col-md-8 button custom-select">
+            <select ng-model="data.options.fontWeight" id="fontWeight" class="form-control">
+              <option value="normal">normal</option>
+              <option value="bold">bold</option>
+            </select>
+          </div>
+        </div>
+      </div>    
+
+      <div class="row">      
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="fontSize">Font Size</label>
+          <div class="col-md-8">
+            <input ng-model="data.options.fontSize" id="fontSize" class="form-control" size="5" type="string"></input>
+          </div>
+        </div>
+      
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="fontFamily">Font Family</label>
+          <div class="button custom-select col-md-8">
+            <select ng-model="data.options.fontFamily" id="fontFamily" class="form-control">
+              <option value="sans-serif">sans-serif</option>
+              <option value="Arial">Arial</option>
+              <option value="Calibri">Calibri</option>
+              <option value="Times New Roman">Times New Roman</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="fontColor">Font Color</label>
+          <div class="col-md-8">
+            <input type="color" ng-model="data.options.fontColor" id="fontColor" class="form-control" size="5"></input>
+          </div>
+        </div>
+      
+      </div>    
+
+      <div class="row">      
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="textAlign">Text Align</label>
+          <div class="button custom-select col-md-8">
+            <select ng-model="data.options.textAlign" id="textAlign" class="form-control">
+              <option value="center">center</option>
+              <option value="left">left</option>
+              <option value="right">right</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="textBaseline">Text Baseline</label>
+          <div class="button custom-select col-md-8">
+            <select ng-model="data.options.textBaseline" id="textBaseline" class="form-control">
+              <option value="bottom">bottom</option>
+              <option value="center">center</option>
+              <option value="top">top</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group-sm col-xs-6 col-md-4">
+          <label class="col-md-4" for="sampleInterval">Sample Interval</label>
+          <div class="col-md-8">
+            <input ng-model="data.options.sampleInterval" id="sampleInterval" class="form-control" size="5" type="number"></input>
+          </div>
+        </div>
+      </div>
+      </div>
+<!--   <div class="form-group">
+    <label for="numWorkers">Num Workers</label>
+    <input name="numWorkers" id="numWorkers" class="form-control" value="2" size="5" type="number"></input>
+  </div> -->
+    </form>
+  </accordion-group>
+</accordion>

@@ -1,0 +1,50 @@
+<html ng-app="gify"> 
+	<head>
+		<meta charset="utf-8" />
+		<meta content="Generateur de gif animé" name="description">
+		<title>Gify</title>
+		
+		<!-- css -->
+		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/gify.css" rel="stylesheet">
+
+		<!-- Dependency  Libs !--> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular/ui-bootstrap-tpls-0.12.0.min.js"></script>
+	    <script type="text/javascript" src="vendor/gifshot.js"></script>
+		<script src="bower_components/angular/angular-file-upload.min.js"></script> 
+
+		<!-- Project specific files !-->
+		<script type="text/javascript" src="js/gify.js"></script>
+
+		<!-- Main Controller !-->
+		<script type="text/javascript" src="js/gifyCtrl.js"></script>
+
+		<!-- Factory dealing with gifshot options !-->
+		<script type="text/javascript" src="js/gifoptions.js"></script>
+		<!-- directive for d&d files upload !-->
+		<script type="text/javascript" src="js/filelistBind.js"></script>
+	</head>
+
+	<body ng-controller="gifyCtrl">
+		<div ng-include="'partials/menubar.html'"></div>
+<!-- 		<button ng-file-select ng-model="data.files" multiple="true">Attach Any File</button>
+ -->
+	   <div class="container-fluid">
+	 		<div class="row">
+	 			<div class="col-md-8">
+		 			<div ng-include="'partials/thumbnails.html'"></div>
+		 		</div>
+	 			<div class="col-md-4">
+					<img src="css/loading.gif" ng-show="data.progress > 0 && data.progress < 100" />
+					<a ng-href="{{data.mongif}}" ng-show="data.progress == 100" class="thumbnail" download="gifshot-demo.gif">
+						<img src='{{data.mongif}}' />
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="vertical-offset" ng-include="'partials/parametres.html'"></div> 
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-6 col-md-3" ng-repeat="file in data.options.images">
+    <a href="#" ng-click='removeImage(file)' class="thumbnail">
+      <img src="{{file}}" alt="Clic to remove file" title="Clic to remove file">
+    </a>
+  </div>
+  <div class="progress col-xs-6 col-md-3" ng-show="data.upprogress > 0 && data.upprogress < 100">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{data.upprogress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{data.upprogress}}%;">
+          {{data.upprogress}}%
+          </div>
+  </div>
+	<div ng-file-drop ng-model="data.files" class="drop-box col-xs-6 col-md-3" 
+    drag-over-class="{accept:'dragover', reject:'dragover-err', delay:100}"
+    multiple="true" allow-dir="true" accept="image/*,application/pdf">
+            Drop images here 
+    <button type="button" class="btn btn-primary navbar-btn" ng-show='data.options.images.length > 0' ng-click='createGif()'>Animate !</button>
+  </div>
+</div>

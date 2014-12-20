@@ -1,0 +1,20 @@
+.drop-box {
+    background: none repeat scroll 0% 0% #F8F8F8;
+    border: 5px dashed #DDD;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 25px;
+    float: left;
+    margin-left: 20px;
+}
+
+.vertical-offset{
+	margin-top: 20px;
+}
+
+label{
+	font-size: 12px;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
